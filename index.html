@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshdeep's Portfolio</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+}
+
+#disclaimer-banner {
+    background-color: #ff5722;
+    position: fixed;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-weight: bold;
+    animation: slideDown 5s ease-in-out infinite;
+  }
+
+  @keyframes slideDown {
+    from {
+      top: -50px;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <a class="fw-bold  navbar-brand" href="#">Harshdeepsinh Jadeja</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+       
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section with Background Image -->
+  <section id="home" class="home-section">
+    <div class="overlay">
+      <div class="container text-center">
+        <h1 class="display-3">Hello, I'm Harshdeep!</h1>
+        <p class="lead">Web Developer & Programmer</p>
+        <a href="#projects" class="btn btn-outline-light btn-lg">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="disclaimer-banner" class="text-center py-2 text-white">
+    📢 This website was created temporarily for an assignment. 
+  </div>
+
+  
+<!-- About Section -->
+<section id="about" class="py-5 text-center">
+    <div class="container">
+      <h2>ABOUT ME</h2>
+      <div class="row justify-content-center align-items-center">
+        <!-- Image Column -->
+        <div class="col-md-4">
+          <img src="hj.jpg" alt="Harshdeep's Photo" class="img-fluid rounded-circle shadow">
+        </div>
+        <!-- Text Column -->
+        <div class="col-md-6">
+          <p class="lead">I am a web developer with expertise in creating user-friendly, dynamic web applications using modern web technologies like HTML, CSS, JavaScript, and Bootstrap. I focus on delivering high-quality projects and learning continuously to improve my skills.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<section id="education" class="container py-5 text-center">
+  <h2 class="mb-4">EDUCATION</h2>
+  <div class="card mx-auto shadow-lg p-4" style="max-width: 600px; border-radius: 10px;">
+    <h4>Mohawk College</h4>
+    <p class="text-muted">Computer System Technician - Software Support</p>
+    <p><strong>2023 - 2025 (Expected)</strong></p>
+    <ul class="list-unstyled">
+      <li> Relevant Coursework: Web Development, Algorithms, Software Engineering</li>
+      <li>🛠 Skills: Java, Python, Git, Linux</li>
+    </ul>
+  </div>
+</section>
+
+<section id="resume" class="container py-5 text-center">
+  <h2 class="mb-4">Resume</h2>
+  <p>Click the button below to see my resume:</p>
+  <a href="HarshdeepResume.pdf" class="btn btn-primary btn-lg" download>
+    <i class="fas fa-download"></i> See Resume
+  </a>
+</section>
+
+
+  
+  
+  
+
+<!-- Projects Section with Hover Effect -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container text-center py-4">
+    <h2 class="p-4"> My Projects</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card project-card shadow-sm">
+          <div class="card-img-container">
+            <img src="localera.png" class="card-img-top" alt="Local Era">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Local Era</h5>
+            <p class="card-text">
+              Local Era is a platform designed to support and promote local businesses. It helps connect customers with local artisans, shops, and services in their community. The project was developed using modern web technologies like HTML, CSS, JavaScript, and PHP, with a focus on user experience and responsiveness.
+            </p>
+            <a href="#" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="card project-card shadow-sm">
+          <div class="card-img-container">
+            <img src="images.jpg" class="card-img-top" alt="Kutchi Art Gallery">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Kutchi Art Gallery</h5>
+            <p class="card-text">
+              Experience the essence of Kutch handicrafts with Kutchi Art Gallery. This platform unveils a collection that merges tradition with contemporary fashion, showcasing the vibrant artistry of local artisans. Sign up now to explore the world of handmade crafts and support the community behind them. Be ready to embrace the richness of artisanal heritage with US!
+            </p>
+            <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Skills Section with Black Icons and Descriptions -->
+<section id="skills" class="py-5 text-center bg-light">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="row justify-content-center">
+
+      <div class="col-md-4">
+        <div class="skill-card shadow-sm p-4">
+          <span class="material-icons" style="font-size:48px; color:black;">code</span> <!-- JavaScript Icon -->
+          <h5>JavaScript</h5>
+          <p>Expert in modern JavaScript (ES6+), building dynamic and responsive websites and applications.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skill-card shadow-sm p-4">
+          <span class="material-icons" style="font-size:48px; color:black;">web</span> <!-- HTML/CSS Icon -->
+          <h5>HTML/CSS</h5>
+          <p>Proficient in crafting well-structured HTML and designing responsive layouts with CSS and Bootstrap.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skill-card shadow-sm p-4">
+          <span class="material-icons" style="font-size:48px; color:black;">storage</span> <!-- PHP Icon -->
+          <h5>PHP</h5>
+          <p>Skilled in developing server-side logic, building REST APIs, and working with databases using PHP.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skill-card shadow-sm p-4 mt-4">
+          <span class="material-icons" style="font-size:48px; color:black;">desktop_windows</span> <!-- React Icon -->
+          <h5>React</h5>
+          <p>Experienced in building interactive and scalable front-end applications using React.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skill-card shadow-sm p-4 mt-4">
+          <span class="material-icons" style="font-size:48px; color:black;">dns</span> <!-- Database Icon -->
+          <h5>Database Management</h5>
+          <p>Experienced in working with relational and NoSQL databases such as MySQL and MongoDB.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skill-card shadow-sm p-4 mt-4">
+          <span class="material-icons" style="font-size:48px; color:black;">view_quilt</span> <!-- Bootstrap Icon -->
+          <h5>Bootstrap</h5>
+          <p>Efficient in designing responsive and modern user interfaces using the Bootstrap framework.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="connect" class="py-5 text-center">
+  <div class="container">
+    <h2>CONTACT ME</h2>
+    <!-- LinkedIn Icon -->
+    <a href="https://www.linkedin.com/in/harshdeepk-jadeja" target="_blank" class="d-inline-block mx-3">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style="width:48px;">
+    </a>
+    <!-- GitHub Icon -->
+    <a href="https://github.com/CodeWithHarshdeep" target="_blank" class="d-inline-block mx-3">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width:48px;">
+    </a>
+    <!-- Email Icon -->
+<a href="mailto:000924280@mohawkcollege.ca" class="d-inline-block mx-3">
+  <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width:48px;">
+</a>
+
+  </div>
+</section>
+
+<!-- Google Material Icons CDN -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Contact Form Inside Modal -->
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Harshdeepsinh Jadeja</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
